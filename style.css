@@ -27,7 +27,7 @@ header {
 
 .logo {
     width: 120px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 header h1 {
@@ -135,20 +135,24 @@ footer {
     text-align: center;
     background-color: #6c1e1e;
     color: #fff;
-    padding: 20px 0;
+    padding: 90px 0;
     font-size: 0.95rem;
     letter-spacing: 0.5px;
     margin-top: 50px;
 }
 /* ===== IMAGES & LOGO ===== */
 .logo {
-    width: 300px;
     display: block;
-    margin: 40px auto 10px;
+    margin: 0 auto;
+    width: 240px; /* increased size slightly for stronger visibility */
+    max-width: 90%; /* keeps it responsive */
+    height: auto;
     animation: fadeIn 1.5s ease;
-}
+    position: relative;
+    top: 10px; /* lowers slightly for balance */
+    left: 80px; /* nudges logo slightly to the right */
 
-.case-image {
+    .case-image {
     text-align: center;
     margin-top: 20px;
 }
@@ -198,7 +202,7 @@ footer {
 ================================ */
 .carousel {
     position: relative;
-    max-width: 350px; /* smaller container */
+    max-width: 250px; /* smaller container */
     margin: 2rem auto;
     overflow: hidden;
     border-radius: 12px;
@@ -209,7 +213,7 @@ footer {
 .slides img {
     width: 100%;
     height: auto;
-    transform: scale(0.5); /* reduce visual size to about 1/4 total area */
+    transform: scale(0.80); /* reduce visual size to about 1/4 total area */
     transform-origin: center;
     border-radius: 12px;
 }
@@ -253,12 +257,6 @@ header {
     padding: 2rem 1rem;
 }
 
-.logo {
-    width: 300px;
-    height: auto;
-    display: block;
-    margin: 0 auto 1rem;
-}
 
 .tagline {
     font-style: italic;
