@@ -144,7 +144,7 @@ footer {
 .logo {
     display: block;
     margin: 0 auto;
-    width: 240px; /* increased size slightly for stronger visibility */
+    width: 240px; 
     max-width: 90%; /* keeps it responsive */
     height: auto;
     animation: fadeIn 1.5s ease;
