@@ -198,25 +198,27 @@ footer {
 ================================ */
 .carousel {
     position: relative;
-    max-width: 650px;
+    max-width: 350px; /* smaller container */
     margin: 2rem auto;
     overflow: hidden;
     border-radius: 12px;
-    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
     background: #fff;
 }
 
+.slides img {
+    width: 100%;
+    height: auto;
+    transform: scale(0.5); /* reduce visual size to about 1/4 total area */
+    transform-origin: center;
+    border-radius: 12px;
+}
 .slides {
     display: flex;
     transition: transform 0.5s ease;
 }
 
-    .slides img {
-        width: 100%;
-        height: auto;
-        flex-shrink: 0;
-        border-radius: 12px;
-    }
+    
 
 .carousel button {
     position: absolute;
