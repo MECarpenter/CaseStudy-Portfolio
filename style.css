@@ -142,7 +142,7 @@ footer {
 }
 /* ===== IMAGES & LOGO ===== */
 .logo {
-    width: 180px;
+    width: 300px;
     display: block;
     margin: 40px auto 10px;
     animation: fadeIn 1.5s ease;
@@ -194,23 +194,55 @@ footer {
     }
 }
 /* ================================
-   CAROUSEL STYLING
+   MAIN CAROUSEL STRUCTURE
 ================================ */
-/* Smaller version of the carousel */
-.small-carousel {
-    max-width: 420px; /* narrower width */
-    margin: 1.5rem auto 3rem; /* slightly more space at the bottom */
+.carousel {
+    position: relative;
+    max-width: 650px;
+    margin: 2rem auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+    background: #fff;
 }
 
-    .small-carousel .slides img {
-        border-radius: 10px;
-        transform: scale(0.95); /* makes images visually smaller */
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+    .slides img {
+        width: 100%;
+        height: auto;
+        flex-shrink: 0;
+        border-radius: 12px;
     }
 
-    .small-carousel button {
-        font-size: 1rem; /* smaller navigation buttons */
-        padding: 0.25rem 0.6rem;
+.carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+    .carousel button:hover {
+        background: rgba(0, 0, 0, 0.8);
     }
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
 /* ================================
    LOGO + HEADER REFINEMENT
 ================================ */
