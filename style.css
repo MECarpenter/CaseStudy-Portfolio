@@ -140,3 +140,56 @@ footer {
     letter-spacing: 0.5px;
     margin-top: 50px;
 }
+/* ===== IMAGES & LOGO ===== */
+.logo {
+    width: 180px;
+    display: block;
+    margin: 40px auto 10px;
+    animation: fadeIn 1.5s ease;
+}
+
+.case-image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+    .case-image img {
+        width: 80%;
+        max-width: 800px;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+    }
+
+        .case-image img:hover {
+            transform: scale(1.02);
+        }
+
+.view-btn {
+    display: inline-block;
+    margin-top: 12px;
+    background-color: #03A6A1;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+    .view-btn:hover {
+        background-color: #067681;
+    }
+
+/* Fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
