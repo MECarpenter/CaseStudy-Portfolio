@@ -150,7 +150,8 @@ footer {
     animation: fadeIn 1.5s ease;
     position: relative;
     top: 10px; /* lowers slightly for balance */
-    left: 80px; /* nudges logo slightly to the right */
+    left: 90px; /* nudges logo slightly to the right */
+}
 
     .case-image {
     text-align: center;
