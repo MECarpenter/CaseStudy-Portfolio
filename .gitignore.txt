@@ -1,0 +1,16 @@
+# Ignore Visual Studio junk
+.vs/
+*.vsidx
+*.sqlite
+*.db
+*.suo
+*.user
+*.vsscc
+*.pdb
+*.obj
+*.exe
+*.dll
+
+# Ignore temp/system files
+Thumbs.db
+.DS_Store
