@@ -193,3 +193,73 @@ footer {
         transform: translateY(0);
     }
 }
+/* ================================
+   CAROUSEL STYLING
+================================ */
+/* Smaller version of the carousel */
+.small-carousel {
+    max-width: 420px; /* narrower width */
+    margin: 1.5rem auto 3rem; /* slightly more space at the bottom */
+}
+
+    .small-carousel .slides img {
+        border-radius: 10px;
+        transform: scale(0.95); /* makes images visually smaller */
+    }
+
+    .small-carousel button {
+        font-size: 1rem; /* smaller navigation buttons */
+        padding: 0.25rem 0.6rem;
+    }
+/* ================================
+   LOGO + HEADER REFINEMENT
+================================ */
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+.tagline {
+    font-style: italic;
+    color: #6c757d;
+}
+
+/* ================================
+   VIEW PROJECT BUTTON
+================================ */
+.view-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: #03a6a1;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+    .view-btn:hover {
+        background-color: #028b87;
+    }
+
+/* ================================
+   MOBILE RESPONSIVENESS
+================================ */
+@media (max-width: 768px) {
+    .carousel {
+        max-width: 95%;
+    }
+
+        .carousel button {
+            font-size: 1.2rem;
+            padding: 0.3rem 0.6rem;
+        }
+}
